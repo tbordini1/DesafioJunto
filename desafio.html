@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="formulario.css" media="">
+    <link rel="stylesheet" type="text/css" href="desafio.css" media="">
    
     <title>Desafio Junto Seguros</title>
 </head>
@@ -24,42 +24,41 @@
        
             <div>
                 <label for="numero"><strong>Número do sinistro:</strong></label>
-                <input type="number" name="number" id="number" required>
+                <input type="text" name="numero" id="numero" required>
             </div>
         </fieldset>
 
         <div>
             <label for="data"><strong>Data do sinistro:</strong></label>
-            <input type="date" name="date" id="date" required>
+            <input type="date" name="data" id="data" required>
         </div>
 
         <div>
-            <label><strong>Selecione o tipo do evento:</strong></label>
-            <label>
-                <input type="radio" name="roubo ou furto" value="selecione" checked>Roubo ou Furto
-            </label>
-            <label>
-                <input type="radio" name="colisao" value="selecione">Colisão
-            </label>
-            <label>
-                <input type="radio" name="causas naturais" value="selecione">Causas naturais
+            <label for="tipo_do_evento"><strong>Selecione o tipo do evento:</strong>
+                <input type="radio" name="tipo_do_evento" value="roubo_ou_furto" checked>Roubo ou Furto
+                <input type="radio" name="tipo_do_evento" value="colisao">Colisão
+                <input type="radio" name="tipo_do_evento" value="causas_naturais">Causas naturais
             </label>
         </div>
 
         <div>
-            <label><strong>Rua da ocorrência:</strong></label>
+            <label for="local"><strong>Rua da ocorrência:</strong></label>
                 <input type="text" name="local" id="local" required>
-            <label><strong>Número:</strong></label>
-                <input type="number" name="number" id="number" required>
-            <label><strong>Bairro:</strong></label>
+            <label for="numero"><strong>Número:</strong></label>
+                <input type="number" name="numero" id="numero" required>
+            <label for="bairro"><strong>Bairro:</strong></label>
                 <input type="text" name="bairro" id="bairro" required>
-            <label><strong>Cidade:</strong></label>
+            <label for="cidade"><strong>Cidade:</strong></label>
                 <input type="text" name="cidade" id="cidade" required>
-            <label><strong>Estado:</strong></label>
+            <label for="estado"><strong>Estado:</strong></label>
                 <input type="text" name="estado" id="estado" required>
-            <label><strong>País:</strong></label>
-                <input type="text" name="país" id="país" required>
-
+            <label for="pais"><strong>País:</strong></label>
+                <input type="text" name="pais" id="pais" required>
+            
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
         </div>
     </form>
 
