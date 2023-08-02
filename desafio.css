@@ -6,13 +6,13 @@
 #titulo{
     font-family: sans-serif;
     color: #380b61;
-    margin-left: 7%;
+    text-align: center;
 }
 
 #subtitulo{
     font-family: sans-serif;
     color: #380b61;
-    margin-left: 10%;
+    text-align: center;
 }
 
 fieldset{
@@ -24,4 +24,6 @@ body{
     font-family: sans-serif;
     font-size: 1em;
     color: #59429d;
+    width: 70%;
+    margin: auto;
 }
