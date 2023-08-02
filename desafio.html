@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="">
+   
+    <title>Desafio Junto Seguros</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id="titulo">Formulário de aviso de sinistro</h1>
+        <p  id="subtitulo">DADOS DO SEGURADO</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div>
+                <label for="nome"><strong>Nome do segurado:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+       
+            <div>
+                <label for="numero"><strong>Número do sinistro:</strong></label>
+                <input type="number" name="number" id="number" required>
+            </div>
+        </fieldset>
+
+        <div>
+            <label for="data"><strong>Data do sinistro:</strong></label>
+            <input type="date" name="date" id="date" required>
+        </div>
+
+        <div>
+            <label><strong>Selecione o tipo do evento:</strong></label>
+            <label>
+                <input type="radio" name="roubo ou furto" value="selecione" checked>Roubo ou Furto
+            </label>
+            <label>
+                <input type="radio" name="colisao" value="selecione">Colisão
+            </label>
+            <label>
+                <input type="radio" name="causas naturais" value="selecione">Causas naturais
+            </label>
+        </div>
+
+        <div>
+            <label><strong>Rua da ocorrência:</strong></label>
+                <input type="text" name="local" id="local" required>
+            <label><strong>Número:</strong></label>
+                <input type="number" name="number" id="number" required>
+            <label><strong>Bairro:</strong></label>
+                <input type="text" name="bairro" id="bairro" required>
+            <label><strong>Cidade:</strong></label>
+                <input type="text" name="cidade" id="cidade" required>
+            <label><strong>Estado:</strong></label>
+                <input type="text" name="estado" id="estado" required>
+            <label><strong>País:</strong></label>
+                <input type="text" name="país" id="país" required>
+
+        </div>
+    </form>
+
+</body>
+</html>
